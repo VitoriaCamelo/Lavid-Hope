@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hope</title>
+    <link href="{% static 'app_hope/style.css' %}" rel="stylesheet" type="text/css" />
+    <script src="{% static 'app_hope/script.js' %}"></script>
+  </head>
+  <body>
+    <div class="menu">
+     <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="{% url 'inicio' %}">Início</a>
+     <a href="{% url 'cadastro' %}">Cadastrar</a>
+     <a href="{% url 'login' %}">Login</a>
+     <a href="{% url 'conta' %}">Minha conta</a>
+     <a href="{% url 'logout' %}">Sair</a>
+</div>
+<span onclick="openNav()">
+ <div class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+ </div>
+ </span>
+ </div>
+ {% block content %}
+ {% endblock %}
+  </body>
+</html>

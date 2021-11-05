@@ -1,0 +1,29 @@
+{% extends 'app_hope/base.html'%}
+{% block content%}
+{% load static %}
+<img src="{% static 'app_hope/p.png'%}">
+    <form method="post" class="form">
+	    {% csrf_token %}
+      <br>
+        <p>Nome de usuário:</p>
+	<p><input type="text" id="user" name="username"></p>
+	{% if error_name is not None %}
+	<p>{{error_name}}</p>
+	{% endif %}
+	<br>
+	<p>Email:</p>
+	<p><input type="text" id="user" name="email"></p>
+	<br>
+        <p>Senha:</p>
+	<p><input type="password" id="pwd" name="pwd"></p>
+	<p>Sua senha precisa ter pelo menos 8 caracteres</p>
+       <p>Confirmar senha:</p>
+       <p> <input type="password" id="pwd2" name="pwd2"></p>
+       {% if error_pass is not None %}
+	<p>{{error_pass}}</p>
+	{% endif %}
+       <p><input type="submit"></p>
+       <br>
+    </form>
+    </div>
+    {% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'app_hope/base.html' %}
+{% block content %}
+{% load static %}
+<img src="{% static 'app_hope/p.png'%}">
+ <p class="meio">Ainda não tem conta? <a href="{% url 'cadastro' %}"><i>Cadastre-se</i></a></p>
+    <p class="meio">Ou</p>
+    <p class="meio">Faça login <a href="{% url 'login' %}"><i>aqui</i></a</p>
+    
+    {% endblock %}

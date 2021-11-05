@@ -1,0 +1,21 @@
+{% extends 'app_hope/base.html'%}
+{% block content %}
+{% load static %}
+<img src="{% static 'app_hope/p.png'%}">
+<form method="post" class="form">
+	{% csrf_token %}
+	<div>
+		<br>
+		<p>Nome de usuário:</p>
+		<p><input type="text" id="us" name="username"></p>
+		<p>Senha:</p>
+		<p><input type="password" id="pwd" name="password"></p>
+		<p> <a href="{% url 'reset_password'%}">Esqueceu a senha?</a></p>
+		{% if error is not None %}
+		<p>{{error}}</p>
+		{% endif %}
+		<p><input type="submit"></p>
+		<br>
+	</div>	
+	</form>
+	{% endblock %}

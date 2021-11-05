@@ -1,0 +1,14 @@
+{% extends 'app_hope/base.html'%}
+{% block content %}
+<h1>Minha Conta</h1>
+
+<div class="conta">
+<br>
+	<p class="center">Usuário:</p>
+	<p class="usu">{{request.user}}</p>
+	<p class="center">Email:</p>
+	<p class="usu">{{request.user.email}}</p>
+	<br>
+</div>
+{% endblock %}
+

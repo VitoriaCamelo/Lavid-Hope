@@ -1,0 +1,172 @@
+body{
+  text-align: justify ;
+  font-family: "Times New Roman";
+  background-color:#4304a1;
+}
+h1{
+ font-family: Verdana;
+ text-align: center;
+ color:white;
+}
+h2, .cen, .form p{
+text-align: center ;
+}
+p{
+  text-align: justify;
+}
+p .vermelho{
+	color:red;
+}
+.meio{
+  text-align:center;
+  color:white;
+
+}
+.vermelho{
+	color:red;
+}
+.conta{
+  border-radius: 7px;
+  background-color: white ;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 5%
+
+}
+
+a{
+  text-decoration: none;
+}
+i{
+  color:white;
+}
+
+.usu{
+  text-align: center;
+  color:
+#9471cc;
+  font-weight: bold;
+}
+
+
+
+
+form{
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: 70%;
+  margin-top: 20%;
+}
+
+
+.lgcad{
+  padding: 3px;
+  background-color:#6b5a81;
+  border-radius:7px;
+}
+
+.logcad{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+textarea{
+  overflow: auto;
+  resize: none;
+}
+
+input[type=text]{
+  border: none;
+  border-bottom: 2px solid #4a2a82;
+}
+
+.menu{
+  background-color:#4304a1;
+  padding: 1%;
+  color: white;
+}
+.container{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.container:hover .bar1{
+ -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.container:hover .bar2{
+  opacity: 0;
+}
+
+.container:hover .bar3{
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+img{
+	width:50%;
+  height: 50%;
+  margin-left:25%;
+  
+}
+.center{
+text-align:center;
+}
+
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:#4a2a82;
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
